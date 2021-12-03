@@ -871,6 +871,7 @@ MonoBehaviour:
   highlightColor: {r: 0.54901963, g: 0.5254902, b: 0.79215693, a: 1}
   defaultColor: {r: 0.7803922, g: 0.7607844, b: 0.7960785, a: 1}
   videoClip: {fileID: 32900000, guid: f2deace660002ae4b955e285ecd8d6ba, type: 3}
+  playTexture: {fileID: 2056009386}
 --- !u!212 &1640775843
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -987,6 +988,7 @@ MonoBehaviour:
   highlightColor: {r: 0.54901963, g: 0.5254902, b: 0.79215693, a: 1}
   defaultColor: {r: 0.7803922, g: 0.7607844, b: 0.7960785, a: 1}
   videoClip: {fileID: 32900000, guid: f2deace660002ae4b955e285ecd8d6ba, type: 3}
+  playTexture: {fileID: 2056009386}
 --- !u!212 &1926561361
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1070,7 +1072,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2056009387
 RectTransform:
   m_ObjectHideFlags: 0

@@ -11,13 +11,14 @@ public class ArcadeMachine : MonoBehaviour
 
     public VideoClip videoClip;
     VideoPlayer vp;
-    GameObject playTexture;
+    
+    public GameObject playTexture;
     // Start is called before the first frame update
     void Start()
     {
         vp = GameObject.Find("VideoPlayer").GetComponent<VideoPlayer>();
         sr = GetComponent<SpriteRenderer>();
-      
+        
 
     }
 
@@ -29,7 +30,7 @@ public class ArcadeMachine : MonoBehaviour
 
     public void Highlight()
     {
-       // playTexture.SetActive(true);
+        playTexture.SetActive(true);
         vp.clip = videoClip;
         vp.Play();
 
@@ -37,7 +38,7 @@ public class ArcadeMachine : MonoBehaviour
     }
     public void UnHighlight()
     {
-      //  playTexture.SetActive(false);
+       playTexture.SetActive(false);
         vp.Stop();
         sr.color = defaultColor;
     }
