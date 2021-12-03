@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
-
+using UnityEngine.SceneManagement;
 public class ArcadeMachine : MonoBehaviour
 {
     SpriteRenderer sr;
@@ -11,7 +11,7 @@ public class ArcadeMachine : MonoBehaviour
 
     public VideoClip videoClip;
     VideoPlayer vp;
-    
+    public int gameSceneBuildIndex;
     public GameObject playTexture;
     // Start is called before the first frame update
     void Start()
@@ -46,7 +46,7 @@ public class ArcadeMachine : MonoBehaviour
     public void Interaction()
     {
         Debug.Log("This is " + gameObject.name);
-        //test
+        SceneManager.LoadScene(gameSceneBuildIndex);
 
     }
 }
